@@ -21,7 +21,7 @@ def edit_text():
     with open(file_path, 'r') as f:
         text = f.read()
 
-    text.replace(pattern_1, pattern_2)
+    text = text.replace(pattern_1, pattern_2)
 
     with open(file_path, 'w') as f:
         f.write(text)
