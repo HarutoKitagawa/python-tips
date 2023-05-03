@@ -23,5 +23,8 @@ def edit_text():
 
     text.replace(pattern_1, pattern_2)
 
+    with open(file_path, 'w') as f:
+        f.write(text)
+
 if __name__ == '__main__':
     edit_text()
